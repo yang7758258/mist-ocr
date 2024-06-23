@@ -5,7 +5,7 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # 将代码添加到镜像中
-COPY . /app
+COPY ./*.txt ./*.py ./*.sh ./*.onnx /app/
 
 # 设置 pip 源为阿里云 删除下方#号开启
 # RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
